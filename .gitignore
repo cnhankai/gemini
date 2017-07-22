@@ -1,5 +1,6 @@
 # WebStorm file
 .idea
+*.css
 
 # Logs
 logs

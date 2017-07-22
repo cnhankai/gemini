@@ -1,7 +1,12 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title= "云南无线数字音视频服务可视化聚合平台 - " + title
+    link(rel="stylesheet", href="/stylesheets/reset.css")
+    link(rel="stylesheet", href="/stylesheets/layout.css")
+    script(src="/jquery/dist/jquery.js")
+    script(src="/javascripts/layout.js")
   body
+    h1= "云南无线数字音视频服务可视化聚合平台"
+    h2= "云南无线数字电视文化传媒有限公司"
     block content

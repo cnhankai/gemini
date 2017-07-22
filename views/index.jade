@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .layout-wrap
+    .layout-aside.layout-aside-static 静态内容
+    .layout-content 内容
+      .btn-maximize 进入全屏
+      .btn-restore 退出全屏
+    .layout-aside.layout-aside-dynamic 动态内容
+
