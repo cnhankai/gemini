@@ -8,6 +8,12 @@ var stylus = require('stylus');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var routes_charts_assets = require('./routes/charts/assets');
+var routes_charts_dtmb = require('./routes/charts/dtmb');
+var routes_charts_hybrid = require('./routes/charts/hybrid');
+var routes_charts_iptv = require('./routes/charts/iptv');
+var routes_charts_ott = require('./routes/charts/ott');
+var routes_charts_user = require('./routes/charts/user');
 
 var app = express();
 
@@ -27,6 +33,12 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/charts/assets', routes_charts_assets);
+app.use('/charts/dtmb', routes_charts_dtmb);
+app.use('/charts/hybrid', routes_charts_hybrid);
+app.use('/charts/iptv', routes_charts_iptv);
+app.use('/charts/ott', routes_charts_ott);
+app.use('/charts/user', routes_charts_user);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
