@@ -1,16 +1,94 @@
 extends layout
+block head
+  link(rel='stylesheet', href='/stylus/ott.css')
+  script(src='/echarts/dist/echarts.js')
+  script(src='/echarts/theme/chalk.js')
+  script(src='/javascripts/index.js')
 
 block content
   .layout-wrap
-    .layout-aside.layout-aside-static 静态内容
-    .layout-content 内容
-      .btn-maximize 进入全屏
-      .btn-restore 退出全屏
-      a(href="/charts/assets") ASSETS
-      a(href="/charts/dtmb") DTMB
-      a(href="/charts/hybrid") HYBRID
-      a(href="/charts/iptv") IPTV
-      a(href="/charts/ott") OTT
-      a(href="/charts/user") USER
-    .layout-aside.layout-aside-dynamic 动态内容
+    .layout-aside.layout-aside-static
+      .layout-panel-small
+      .layout-panel-small
+      .layout-panel-middle
+      .layout-panel-small
+      .layout-panel-small
+    .layout-main
+      .layout-header
+        .layout-title
+          h1= "云视聚"
+          h2= "云南无线数字音视频服务可视化聚合平台"
+        .layout-nav
+          ul
+            li
+              a(href='/charts/assets', title='DTMB业务可视化')
+                i
+                span DTMB
+            li
+              a(href='/charts/dtmb', title='IPTV业务可视化')
+                i
+                span IPTV
+            li
+              a(href='/charts/hybrid', title='OTT业务可视化')
+                i
+                span OTT
+            li
+              a(href='/charts/hybrid', title='DTMB+OTT业务可视化')
+                i
+                span 融合新媒体
+            li
+              a(href='/charts/assets', title='媒资数据可视化')
+                i
+                span 媒资数据
+            li
+              a(href='/charts/assets', title='用户数据可视化')
+                i
+                span 用户数据
+            li.btn-maximize
+              a(href='javascript:;', title='进入全屏')
+                i
+                span 进入全屏
+            li.btn-restore
+              a(href='javascript:;', title='退出全屏')
+                i
+                span 退出全屏
+        .layout-status
+          ul
+            li
+              label 系统时间：
+              a(href='javascript:;') 2017年08月31日 11:34:08 星期四
+            li
+              label 系统状态：
+              a(href='javascript:;') 正常
+            li
+              label 更新时间：
+              a(href='javascript:;') 2017年08月31日 00:00:00 星期四
+            li
+              label 国内平台总用户数：
+              a(href='javascript:;') 1301230
+            li
+              label 海外平台总用户数：
+              a(href='javascript:;') 611329
+            li
+              label 媒资库资源总数：
+              a(href='javascript:;') 411329
+            li
+              label DTMB平台运行状态：
+              a(href='javascript:;') 正常
+            li
+              label OTT平台运行状态：
+              a(href='javascript:;') 正常
+            li
+              label DTMB+OTT平台运行状态：
+              a(href='javascript:;') 正常
+      .layout-content
+        .layout-panel-large
+          .chart-map-dtmb
+        .layout-panel-small
+        .layout-panel-small
+    .layout-aside.layout-aside-dynamic
+      .layout-panel-small
+      .layout-panel-small
+      .layout-panel-middle
+      .layout-panel-middle
 
