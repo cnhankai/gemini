@@ -16,41 +16,43 @@ block content
     .layout-main
       .layout-header
         .layout-title
-          h1= "云视聚"
+          h1
+            a(href='javascript:;' title='云视聚')
+              img(src='/images/common/logo-white-middle.png')
           h2= "云南无线数字音视频服务可视化聚合平台"
         .layout-nav
           ul
             li
-              a(href='/charts/assets', title='DTMB业务可视化')
-                i
+              a(href='/charts/dtmb', title='DTMB业务可视化')
+                img(src='/images/common/icon-dtmb-white-small.png')
                 span DTMB
             li
-              a(href='/charts/dtmb', title='IPTV业务可视化')
-                i
+              a(href='/charts/iptv', title='IPTV业务可视化')
+                img(src='/images/common/icon-iptv-white-small.png')
                 span IPTV
             li
-              a(href='/charts/hybrid', title='OTT业务可视化')
-                i
+              a(href='/charts/ott', title='OTT业务可视化')
+                img(src='/images/common/icon-ott-white-small.png')
                 span OTT
             li
               a(href='/charts/hybrid', title='DTMB+OTT业务可视化')
-                i
+                img(src='/images/common/icon-hybrid-white-small.png')
                 span 融合新媒体
             li
               a(href='/charts/assets', title='媒资数据可视化')
-                i
+                img(src='/images/common/icon-assets-white-small.png')
                 span 媒资数据
             li
               a(href='/charts/assets', title='用户数据可视化')
-                i
+                img(src='/images/common/icon-dtmb-white-small.png')
                 span 用户数据
             li.btn-maximize
               a(href='javascript:;', title='进入全屏')
-                i
+                img(src='/images/common/icon-dtmb-white-small.png')
                 span 进入全屏
             li.btn-restore
               a(href='javascript:;', title='退出全屏')
-                i
+                img(src='/images/common/icon-dtmb-white-small.png')
                 span 退出全屏
         .layout-status
           ul
